@@ -2,7 +2,7 @@ version: 2
 
 models:
   - name: stg_jaffle_shop__customers
-    description: one unique customer per row
+    description: Staged customer data from our jaffle shop app.
     columns:
       - name: customer_id
         description: primary key
@@ -10,7 +10,7 @@ models:
           - unique
           - not_null
   - name: stg_jaffle_shop__orders
-    description: one order per row
+    description: Staged order data from our jaffle shop app.
     columns:
       - name: order_id
         description: primary key
