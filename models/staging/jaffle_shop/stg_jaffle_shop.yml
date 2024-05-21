@@ -20,7 +20,6 @@ models:
       - name: status
         description: "{{ doc('order_status')}}"
         tests:
-          - unique
           - accepted_values:
               values: ['shipped', 'completed', 'return_pending', 'returned', 'placed']
           
